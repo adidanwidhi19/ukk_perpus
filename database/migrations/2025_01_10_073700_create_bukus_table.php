@@ -17,6 +17,8 @@ return new class extends Migration
             $table->id();
             $table->string('judul');
             $table->foreignId('kategori_id');
+            $table->string('kode_buku');
+            $table->string('penulis');
             $table->string('penerbit');
             $table->integer('tahun_terbit');
             $table->timestamps();
